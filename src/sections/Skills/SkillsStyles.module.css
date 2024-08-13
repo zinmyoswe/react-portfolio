@@ -1,0 +1,85 @@
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.light {
+  color: #000; /* Light mode text color */
+}
+
+.dark {
+  color: #fff; /* Dark mode text color */
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Base layout for mobile devices */
+.skill {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack skill name and progress bar vertically */
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.skillName {
+  font-size: 1.2em;
+}
+
+.progressBar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 10px;
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+  border-radius: 10px;
+}
+
+/* Tablet view adjustments */
+@media (min-width: 600px) {
+  .skill {
+    flex-direction: row; /* Align text and progress bar side by side */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .progressBar {
+    width: 70%; /* Adjust progress bar width for tablet view */
+  }
+}
+
+/* Laptop view adjustments */
+@media (min-width: 1024px) {
+  .skill {
+    max-width: 600px; /* Limit skill width on larger screens */
+  }
+
+  .progressBar {
+    width: 75%; /* Slightly increase progress bar width for laptops */
+  }
+}
+
+@media (min-width: 1440px) {
+  .skill {
+    max-width: 1000px; /* Further increase width for large screens */
+  }
+
+  .skillName {
+    width: 1200px;
+    text-align: start;
+
+  }
+
+  .progressBar {
+    width: 80%; /* Further adjust progress bar width for large screens */
+  }
+}
