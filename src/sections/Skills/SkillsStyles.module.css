@@ -83,3 +83,17 @@
     width: 80%; /* Further adjust progress bar width for large screens */
   }
 }
+
+
+
+@media (width <= 450px) {
+  
+  
+  .skillName {
+    font-size: 15px;
+    text-align: start;
+    padding-left: 10px;
+
+  }
+
+}
