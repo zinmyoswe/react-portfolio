@@ -8,16 +8,18 @@ function Skills() {
   const { theme } = useTheme(); // Get the current theme from context
 
   const skills = [
-    { name: 'Linux, Docker, Kubernetes', level: 90 },
+    
+    { name: 'Backend ( ASP.NET, C#, .NET Core)', level: 80 },
+    { name: 'Backend ( Python, Django, PHP, Laravel, NodeJs, Java, SpringBoot, RESTful APIs, JSON)', level: 85 },
+    { name: 'Frontend (Angular,Vue, React,Nextjs)', level: 90 },
+    { name: 'Frontend (HTML, CSS, Javascript, Bootstrap, Tailwind)', level: 90 },
     { name: 'Data Center Infrastructure and Automation', level: 65 },
     { name: 'Data Engineering and Analysis (SPARK, Hadoop, HIVE, Jupyter, PowerBI)', level: 80 },
     { name: 'Cloud Platform(AWS,Azure, GCP)', level: 75 },
     { name: 'Database (MYSQL, MSSQL, Oracel Sql, PostgreSQL, PL SQL, NoSQL)', level: 80 },
-    { name: 'Backend ( Python, Django, PHP, Laravel, NodeJs, Java, SpringBoot, RESTful APIs, JSON)', level: 90 },
-    { name: 'Backend ( ASP.NET, C#, VB.NET)', level: 60 },
-    { name: 'Frontend (Angular,Vue, React,Nextjs)', level: 90 },
-    { name: 'Frontend (HTML, CSS, Javascript, Bootstrap, Tailwind)', level: 90 },
-    { name: 'Android/ IOS(Ionic, Dart, Flutter, Kotlin)', level: 60 },
+    
+    { name: 'Android/ IOS(Ionic, Dart, Flutter, Kotlin)', level: 50 },
+    { name: 'Linux, Docker, Kubernetes', level: 80 },
   ];
 
   return (

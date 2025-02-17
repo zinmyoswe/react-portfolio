@@ -1,5 +1,5 @@
 import styles from './ProjectsStyles.module.css';
-
+import carParkingVideo from '../../assets/carparkingiconsiam.mp4'; 
 import gtb from '../../assets/gtb.jpg';
 import mptclub from '../../assets/mptclub.jpg';
 import mptipcc from '../../assets/mptipcc.jpg';
@@ -10,11 +10,31 @@ import geminiapi from '../../assets/geminiapi.jpg';
 import oml from '../../assets/oml.jpg';
 import oml2 from '../../assets/oml2.jpg';
 import oml3 from '../../assets/oml3.jpg';
+import busdashboard3 from '../../assets/busdashboard3.jpg';
+
+
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
   const projects = [
-    
+    {
+      videos: [carParkingVideo], // Add video
+      link: 'https://www.facebook.com/pssgroupth/',
+      name: 'Cashless Car Parking Web Payment System for ICONSIAM Project',
+      description: 'maintenance and migrations of car parking webpayment system with SCB, Bangkok Bank BBL, Ksherpay, thaiQR Payment system as per customer (Iconsiam, central world, MBK) request. Developed with Banking API, .NETCore API Backend, Javascript and .NETCore MVC frontend.',
+    },
+    {
+      youtubeLink: 'https://www.youtube.com/embed/lBvpfUnsif0?autoplay=1&mute=1&loop=1&playlist=lBvpfUnsif0&controls=0&modestbranding=1&showinfo=0&rel=0&disablekb=1&fs=0',
+      link: 'https://www.facebook.com/pssgroupth/', // Replace with the correct link
+      name: 'Cashless Car Parking Web Payment System and Web Stamp for MBK Project',
+      description: 'maintenance and migrations of webpayment and web stamp system with Banking API, .NETCore API Backend, Javascript and .NETCore MVC frontend. Customer can get carparking discount when they stamp on receipt page such as 3000 baht receipt for 2 hrs free when making car parking QR payment  ',
+    },
+    {
+      images: [busdashboard3],
+      link: 'https://itd-layout2-test.transportation-dashboard.com/',
+      name: 'ICONSIAM Transportation Dashboard Project',
+      description: 'Maintain of ICONSIAM Transportation Dashboard with .NETCORE MVC, Javascript and API of Thai Smile Bus, Thai Smile Boat, Supatra Boat, BTS, Parking available and Queing',
+    },
     {
       images: [youtubeapi],
       link: 'https://youtube-api-clone.vercel.app/',
@@ -84,7 +104,22 @@ function Projects() {
         {projects.map((project, index) => (
           <div key={index} className={styles.project}>
             <div className={styles.imageContainer}>
-              {project.images.map((src, imgIndex) => (
+              {project.videos && project.videos.map((videoSrc, vidIndex) => (
+                <video key={vidIndex} src={videoSrc} autoPlay muted loop playsInline className={styles.video} />
+              ))}
+  
+              {project.youtubeLink && (
+                <iframe
+                  className={styles.video}
+                  src={project.youtubeLink}
+                  title={project.name}
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                ></iframe>
+              )}
+  
+              {project.images && project.images.map((src, imgIndex) => (
                 <img key={imgIndex} src={src} alt={project.name} />
               ))}
             </div>
@@ -92,8 +127,7 @@ function Projects() {
               <h3>{project.name}</h3>
               <p>{project.description}</p>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <button className="hover">View Project</button>
-                
+                <button className="hover">View Project</button>
               </a>
             </div>
           </div>

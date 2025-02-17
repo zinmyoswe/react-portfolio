@@ -2,10 +2,13 @@
     text-align: left;
     padding: 20px;
   }
+
+
   
   .light {
     color: #000; /* Light mode text color */
     background-color: #fff; /* Light mode background color */
+
   }
   
   .dark {
@@ -42,6 +45,8 @@
     margin-bottom: 10px;
     line-height: 1.6;
   }
+
+
   
   @media (max-width: 768px) {
     .container {

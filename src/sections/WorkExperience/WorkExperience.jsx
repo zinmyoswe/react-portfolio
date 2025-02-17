@@ -11,6 +11,23 @@ function WorkExperience() {
       className={`${styles.container} ${theme === 'light' ? styles.light : styles.dark}`}
     >
       <h1 className="sectionTitle">Work Experience</h1>
+
+      <div className={styles.experience}>
+        
+        <h3>Programmer ( C# .NETCore)</h3>
+        <h3>PSS Group (Thailand) Company Limited</h3>
+        <p className={styles.date}>Sep 2024 - Present</p>
+        <ul className={styles.details}>
+        <li>Maintained and migrated car parking web payment system with Banking API, .NETCore API backend, JavaScript, and .NETCore MVC frontend.</li>
+        <li>Debugged, tested, and fixed issues in web payment and web stamp APIs.</li>
+        <li>Integrated different payment gateway APIs (SCB, Bangkok Bank BBL, Ksherpay, ThaiQR Payment) for different clients like Iconsiam, Central World, Siam Paragon, MBK, and Platinum.</li>
+        <li>Developed and maintained web stamp system with Banking API, .NETCore backend, and front-end technologies.</li>
+        <li>Enabled parking discounts through the web stamp system for shopping mall visitors based on receipt value when making QR payments.</li>
+        </ul>
+      </div>
+
+      <br></br>
+
       <div className={styles.experience}>
         
         <h3>SOC (VMAX) Big Data Engineer</h3>
