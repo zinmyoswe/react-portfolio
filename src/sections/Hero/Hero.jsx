@@ -9,7 +9,7 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
-import CV from '../../assets/Zin Myo Swe SG Resume.pdf';
+import CV from '../../assets/Zin Myo Swe EN Resume.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
@@ -56,9 +56,15 @@ function Hero() {
         <p className={styles.description}>
         With 5+ years of experience in Software Engineering, System Engineering, Programming, WebDevelopment, Telecom, Manage Service, Product Support,Troubleshooting and maintenance of Hardware and over 100 servers in datacenter, network performance analysing,Core Banking software, CRM, IPCC, CBS and Ecommerce Software. 
         </p>
-        <a href={CV} download>
-          <button className="hover">Resume</button>
-        </a>
+        <div className={styles.buttonContainer}>
+          <a href={CV} download>
+            <button className="hover">Resume</button>
+          </a>
+
+          {/* <a href={CV} download>
+            <button className="hover2">Resume2</button>
+          </a> */}
+        </div>
       </div>
     </section>
   );

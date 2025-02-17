@@ -46,6 +46,8 @@
     transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
   }
 
+
+
   button:hover {
     transform: scale(1.05);
   }
@@ -120,3 +122,12 @@
     }
   }
 }
+
+/* Example CSS for centering and button styles */
+.buttonContainer {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  align-items: center;     /* Centers the buttons vertically */
+  gap: 10px;               /* Adds space between buttons */
+}
+
