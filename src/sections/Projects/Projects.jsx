@@ -19,13 +19,13 @@ function Projects() {
   const projects = [
     {
       videos: [carParkingVideo], // Add video
-      link: 'https://www.facebook.com/pssgroupth/',
+      link: 'https://carpark.iconsiam.com/webpayment',
       name: 'Cashless Car Parking Web Payment System for ICONSIAM Project',
       description: 'maintenance and migrations of car parking webpayment system with SCB, Bangkok Bank BBL, Ksherpay, thaiQR Payment system as per customer (Iconsiam, central world, MBK) request. Developed with Banking API, .NETCore API Backend, Javascript and .NETCore MVC frontend.',
     },
     {
       youtubeLink: 'https://www.youtube.com/embed/lBvpfUnsif0?autoplay=1&mute=1&loop=1&playlist=lBvpfUnsif0&controls=0&modestbranding=1&showinfo=0&rel=0&disablekb=1&fs=0',
-      link: 'https://www.facebook.com/pssgroupth/', // Replace with the correct link
+      link: 'https://smartparking-payment.mbkgroup.co.th/webpayment', // Replace with the correct link
       name: 'Cashless Car Parking Web Payment System and Web Stamp for MBK Project',
       description: 'maintenance and migrations of webpayment and web stamp system with Banking API, .NETCore API Backend, Javascript and .NETCore MVC frontend. Customer can get carparking discount when they stamp on receipt page such as 3000 baht receipt for 2 hrs free when making car parking QR payment  ',
     },
