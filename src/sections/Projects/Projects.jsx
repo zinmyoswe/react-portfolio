@@ -1,5 +1,6 @@
 import styles from './ProjectsStyles.module.css';
 import carParkingVideo from '../../assets/carparkingiconsiam.mp4'; 
+import NikecloneVideo from '../../assets/segment1 (3).mp4'; 
 import gtb from '../../assets/gtb.jpg';
 import mptclub from '../../assets/mptclub.jpg';
 import mptipcc from '../../assets/mptipcc.jpg';
@@ -18,6 +19,12 @@ import ProjectCard from '../../common/ProjectCard';
 function Projects() {
   const projects = [
     {
+      videos: [NikecloneVideo], // Add video
+      link: 'https://test.peachcherrytechnology.com/index.html',
+      name: 'Nike Clone',
+      description: 'Developed with HTML, CSS and Javascript and pending to Integrate with backend API',
+    },
+    {
       videos: [carParkingVideo], // Add video
       link: 'https://carpark.iconsiam.com/webpayment',
       name: 'Cashless Car Parking Web Payment System for ICONSIAM Project',
@@ -35,6 +42,7 @@ function Projects() {
       name: 'ICONSIAM Transportation Dashboard Project',
       description: 'Maintain of ICONSIAM Transportation Dashboard with .NETCORE MVC, Javascript and API of Thai Smile Bus, Thai Smile Boat, Supatra Boat, BTS, Parking available and Queing',
     },
+    
     {
       images: [youtubeapi],
       link: 'https://youtube-api-clone.vercel.app/',
