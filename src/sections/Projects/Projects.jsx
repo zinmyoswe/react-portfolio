@@ -12,6 +12,7 @@ import oml from '../../assets/oml.jpg';
 import oml2 from '../../assets/oml2.jpg';
 import oml3 from '../../assets/oml3.jpg';
 import busdashboard3 from '../../assets/busdashboard3.jpg';
+import nflix from '../../assets/nflix.jpg';
 
 
 import ProjectCard from '../../common/ProjectCard';
@@ -54,6 +55,12 @@ function Projects() {
       link: 'https://gemini-ai-clone-virid.vercel.app/',
       name: 'Gemini API',
       description: 'Developed with react and Gemini API',
+    },
+    {
+      images: [nflix],
+      link: 'https://movieapi.peachcherrytechnology.com/',
+      name: 'Movie API',
+      description: 'Developed with react and TMDB API',
     },
     {
       images: [laravelecommerce],
