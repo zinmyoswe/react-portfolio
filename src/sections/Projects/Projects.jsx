@@ -19,12 +19,7 @@ import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
   const projects = [
-    {
-      videos: [NikecloneVideo], // Add video
-      link: 'https://test.peachcherrytechnology.com/index.html',
-      name: 'Nike Clone',
-      description: 'Developed with HTML, CSS and Javascript and pending to Integrate with backend API',
-    },
+    
     {
       videos: [carParkingVideo], // Add video
       link: 'https://carpark.iconsiam.com/webpayment',
@@ -42,6 +37,12 @@ function Projects() {
       link: 'https://itd-layout2-test.transportation-dashboard.com/',
       name: 'ICONSIAM Transportation Dashboard Project',
       description: 'Maintain of ICONSIAM Transportation Dashboard with .NETCORE MVC, Javascript and API of Thai Smile Bus, Thai Smile Boat, Supatra Boat, BTS, Parking available and Queing',
+    },
+    {
+      videos: [NikecloneVideo], // Add video
+      link: 'https://test.peachcherrytechnology.com/index.html',
+      name: 'Nike Clone',
+      description: 'Developed with HTML, CSS and Javascript and pending to Integrate with backend API',
     },
     
     {
