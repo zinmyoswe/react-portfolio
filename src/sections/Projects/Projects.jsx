@@ -71,7 +71,7 @@ function Projects() {
     },
     {
       images: [djangoecommerce],
-      link: 'https://github.com/zinmyoswe/Django-Ecommerce',
+      link: 'https://zinmyo456.pythonanywhere.com/',
       name: 'Django Ecommerce',
       description: 'Developed backend with python, Django and stripe',
     },
