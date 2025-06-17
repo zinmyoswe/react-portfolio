@@ -1,6 +1,6 @@
 import styles from './ProjectsStyles.module.css';
 import carParkingVideo from '../../assets/carparkingiconsiam.mp4'; 
-import NikecloneVideo from '../../assets/segment1 (3).mp4'; 
+import NikecloneVideo from '../../assets/nikevd1.mp4'; 
 import gtb from '../../assets/gtb.jpg';
 import mptclub from '../../assets/mptclub.jpg';
 import mptipcc from '../../assets/mptipcc.jpg';
