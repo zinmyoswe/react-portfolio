@@ -13,12 +13,48 @@ import oml2 from '../../assets/oml2.jpg';
 import oml3 from '../../assets/oml3.jpg';
 import busdashboard3 from '../../assets/busdashboard3.jpg';
 import nflix from '../../assets/nflix.jpg';
+import img1 from '../../assets/landingpage.png';
+import img2 from '../../assets/FavouriteModal.png';
+import img3 from '../../assets/favourite.png';
+import img4 from '../../assets/productdetail.png';
+import img5 from '../../assets/productdetailmodal.png';
+import img6 from '../../assets/women.png';
+import img7 from '../../assets/slider.png';
+import img8 from '../../assets/shoes.png';
+import img9 from '../../assets/shippingpage.png';
+import img10 from '../../assets/cartpage.png';
+import img11 from '../../assets/payment.png';
+import img12 from '../../assets/search.png';
 
 
 import ProjectCard from '../../common/ProjectCard';
+import { useEffect, useState } from 'react';
+
+
+
+
 
 function Projects() {
+
+  const [currentCarouselIndex, setCurrentCarouselIndex] = useState(0);
+
+  useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentCarouselIndex(prev => (prev + 1) % (projects[0].carousel?.length || 1));
+  }, 3000); // 1s
+
+    return () => clearInterval(interval);
+  }, []);
+
   const projects = [
+
+    {
+      carousel: [ img2, img3, img4, img5, img6, img1, img7, img8, img9, img10, img11, img12],
+      name: 'React and Laravel API Ecommerce',
+      description: 'Developed with frontend React, tailwindcss and backend php Laravel API',
+      link: 'https://react-and-laravel-api-ecommerce.vercel.app/',
+    },
+    
     
     {
       videos: [carParkingVideo], // Add video
@@ -32,18 +68,24 @@ function Projects() {
       name: 'Cashless Car Parking Web Payment System and Web Stamp for MBK Project',
       description: 'maintenance and migrations of webpayment and web stamp system with Banking API, .NETCore API Backend, Javascript and .NETCore MVC frontend. Customer can get carparking discount when they stamp on receipt page such as 3000 baht receipt for 2 hrs free when making car parking QR payment  ',
     },
-    {
-      images: [busdashboard3],
-      link: 'https://itd-layout2-test.transportation-dashboard.com/',
-      name: 'ICONSIAM Transportation Dashboard Project',
-      description: 'Maintain of ICONSIAM Transportation Dashboard with .NETCORE MVC, Javascript and API of Thai Smile Bus, Thai Smile Boat, Supatra Boat, BTS, Parking available and Queing',
-    },
+
+    
+
     {
       videos: [NikecloneVideo], // Add video
       link: 'https://test.peachcherrytechnology.com/index.html',
       name: 'Nike Clone',
       description: 'Developed with HTML, CSS and Javascript and pending to Integrate with backend API',
     },
+
+    {
+      images: [busdashboard3],
+      // link: 'https://itd-layout2-test.transportation-dashboard.com/',
+      link: 'https://layout2.transportation-dashboard.com/',
+      name: 'ICONSIAM Transportation Dashboard Project',
+      description: 'Maintain of ICONSIAM Transportation Dashboard with .NETCORE MVC, Javascript and API of Thai Smile Bus, Thai Smile Boat, Supatra Boat, BTS, Parking available and Queing',
+    },
+    
     
     {
       images: [youtubeapi],
@@ -120,6 +162,15 @@ function Projects() {
         {projects.map((project, index) => (
           <div key={index} className={styles.project}>
             <div className={styles.imageContainer}>
+
+              {project.carousel && (
+                <img
+                  src={project.carousel[currentCarouselIndex]}
+                  alt={project.name}
+                  className={styles.carouselImage}
+                />
+              )}
+             
               {project.videos && project.videos.map((videoSrc, vidIndex) => (
                 <video key={vidIndex} src={videoSrc} autoPlay muted loop playsInline className={styles.video} />
               ))}

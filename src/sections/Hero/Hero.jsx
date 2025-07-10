@@ -41,7 +41,7 @@ function Hero() {
           <br />
           
         </h1>
-        <h2>Software Engineer / System Engineer</h2>
+        <h2>Software Engineer / Software Developer</h2>
         <span>
           {/* <a href="https://twitter.com/" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
@@ -54,7 +54,7 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-        With 5+ years of experience in Software Engineering, System Engineering, Programming, WebDevelopment, Telecom, Manage Service, Product Support,Troubleshooting and maintenance of Hardware and over 100 servers in datacenter, network performance analysing,Core Banking software, CRM, IPCC, CBS and Ecommerce Software. 
+        With 5+ years of experience in Software Engineering, Software Developement , System Engineering, Programming, WebDevelopment, Telecom, Manage Service, Product Support,Troubleshooting and maintenance of Hardware and over 100 servers in datacenter, network performance analysing,Core Banking software, CRM, IPCC, CBS and Ecommerce Software. 
         </p>
         <div className={styles.buttonContainer}>
           <a href={CV} download>

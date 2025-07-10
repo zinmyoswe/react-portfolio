@@ -29,7 +29,7 @@ function Skills() {
         theme === 'light' ? styles.light : styles.dark
       }`}
     >
-      <h1 className="sectionTitle">Skills</h1>
+      <h2 className="sectionTitle">Skills</h2>
       <div className={styles.skillsContainer}>
         {skills.map((skill, index) => (
           <div key={index} className={styles.skill}>

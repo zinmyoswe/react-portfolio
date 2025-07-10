@@ -1,79 +1,40 @@
 .container {
-  display: flex;
-  flex-direction: column;
+  padding: 2rem;
+  /* background-color: white; */
   text-align: center;
+  font-family: sans-serif;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-textarea,
-input:not([type='submit']) {
-  height: 50px;
-  padding-left: 16px;
-  width: 250px;
-}
-
-textarea {
-  padding-top: 16px;
-  resize: none;
-  height: 250px;
-}
-
-input,
-textarea {
-  border-radius: 20px;
-  border: #888 1px solid;
-  box-sizing: border-box;
-  justify-self: center;
-  background-color: var(--background-color);
-  color: var(--form-text-color);
-}
-
-::placeholder {
-  color: var(--form-text-color);
-}
-
-input[type='submit'] {
-  background-color: var(--btn-color);
-  color: var(--btn-text-color);
-  border: none;
-  border-radius: 20px;
-  width: 126px;
-  height: 50px;
-  font-size: 20px;
-  font-weight: bold;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 600px;
   margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-input[type='submit']:hover {
-  transform: scale(1.05);
+.logo {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
-input[type='submit']:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+.name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-@media (width >= 800px) {
-  textarea,
-  input:not([type='submit']) {
-    width: 600px;
-    font-size: 20px;
-  }
-  form {
-    gap: 40px;
-  }
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0.5rem 0;
 }
 
-@media (width >= 1400px) {
-  textarea,
-  input:not([type='submit']) {
-    width: 800px;
-  }
+.icon {
+  width: 24px;
+  height: 24px;
 }

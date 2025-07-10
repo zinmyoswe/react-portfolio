@@ -28,8 +28,10 @@ body {
 #root {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 10px;
 }
+
+
 
 h1,
 h2,
