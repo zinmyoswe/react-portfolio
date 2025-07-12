@@ -18,13 +18,15 @@ import img2 from '../../assets/FavouriteModal.png';
 import img3 from '../../assets/favourite.png';
 import img4 from '../../assets/productdetail.png';
 import img5 from '../../assets/productdetailmodal.png';
-import img6 from '../../assets/women.png';
-import img7 from '../../assets/slider.png';
-import img8 from '../../assets/shoes.png';
-import img9 from '../../assets/shippingpage.png';
-import img10 from '../../assets/cartpage.png';
-import img11 from '../../assets/payment.png';
-import img12 from '../../assets/search.png';
+import img6 from '../../assets/men.png';
+import img7 from '../../assets/women2.png';
+import img8 from '../../assets/slider.png';
+import img9 from '../../assets/shoe2.png';
+import img10 from '../../assets/shippingpage.png';
+import img11 from '../../assets/cartpage2.png';
+import img12 from '../../assets/payment.png';
+import img13 from '../../assets/search2.png';
+
 
 
 import ProjectCard from '../../common/ProjectCard';
@@ -49,8 +51,8 @@ function Projects() {
   const projects = [
 
     {
-      carousel: [ img2, img3, img4, img5, img6, img1, img7, img8, img9, img10, img11, img12],
-      name: 'React and Laravel API Ecommerce',
+      carousel: [ img2, img3, img4, img5, img6, img1, img7, img8, img9, img10, img11, img12, img13],
+      name: 'React and Laravel API Fullstack Ecommerce',
       description: 'Developed with frontend React, tailwindcss and backend php Laravel API',
       link: 'https://react-and-laravel-api-ecommerce.vercel.app/',
     },
@@ -80,8 +82,8 @@ function Projects() {
 
     {
       images: [busdashboard3],
-      // link: 'https://itd-layout2-test.transportation-dashboard.com/',
-      link: 'https://layout2.transportation-dashboard.com/',
+      link: 'https://itd-layout2-test.transportation-dashboard.com/',
+      // link: 'https://layout2.transportation-dashboard.com/',
       name: 'ICONSIAM Transportation Dashboard Project',
       description: 'Maintain of ICONSIAM Transportation Dashboard with .NETCORE MVC, Javascript and API of Thai Smile Bus, Thai Smile Boat, Supatra Boat, BTS, Parking available and Queing',
     },
