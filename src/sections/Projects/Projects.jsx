@@ -21,7 +21,7 @@ import img5 from '../../assets/productdetailmodal.png';
 import img6 from '../../assets/men.png';
 import img7 from '../../assets/women2.png';
 import img8 from '../../assets/slider.png';
-import img9 from '../../assets/shoe2.png';
+import img9 from '../../assets/shoe3.png';
 import img10 from '../../assets/shippingpage.png';
 import img11 from '../../assets/cartpage2.png';
 import img12 from '../../assets/payment.png';
