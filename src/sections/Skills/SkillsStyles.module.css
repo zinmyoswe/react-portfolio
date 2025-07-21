@@ -75,7 +75,7 @@
   }
 
   .progressBar {
-    width: 100%; /* Slightly increase progress bar width for laptops */
+    width: 80%; /* Slightly increase progress bar width for laptops */
   }
 }
 
