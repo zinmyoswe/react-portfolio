@@ -26,6 +26,7 @@ import img10 from '../../assets/shippingpage.png';
 import img11 from '../../assets/cartpage2.png';
 import img12 from '../../assets/payment.png';
 import img13 from '../../assets/search2.png';
+import traveldashboard from '../../assets/traveldashboard.png';
 
 
 
@@ -101,6 +102,12 @@ function Projects() {
       name: 'Gemini API',
       description: 'Developed with react and Gemini API',
     },
+    // {
+    //   images: [traveldashboard],
+    //   link: 'https://travel-dashboard2.vercel.app/',
+    //   name: 'React Travel Dashboard',
+    //   description: 'Developed with react ,react router v7, Google Auth, appwrite and stripe',
+    // },
     {
       images: [nflix],
       link: 'https://movieapi.peachcherrytechnology.com/',

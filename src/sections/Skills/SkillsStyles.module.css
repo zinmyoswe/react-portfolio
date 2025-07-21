@@ -63,7 +63,7 @@
 /* Laptop view adjustments */
 @media (min-width: 1024px) {
   .skill {
-    max-width: 960px; /* Limit skill width on larger screens */
+    /* max-width: 960px; */
     margin-right: 40px;
     margin-right: 40px;
   }
@@ -75,7 +75,7 @@
   }
 
   .progressBar {
-    width: 75%; /* Slightly increase progress bar width for laptops */
+    width: 100%; /* Slightly increase progress bar width for laptops */
   }
 }
 
