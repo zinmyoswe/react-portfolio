@@ -47,20 +47,31 @@
 /* Tablet view adjustments */
 @media (min-width: 600px) {
   .skill {
-    flex-direction: row; /* Align text and progress bar side by side */
-    justify-content: space-between;
-    align-items: center;
+    
+    min-width: 600px;
+    margin-right: 40px;
+    margin-right: 40px;
   }
 
+  
+
   .progressBar {
-    width: 70%; /* Adjust progress bar width for tablet view */
+    width: 100%; /* Adjust progress bar width for tablet view */
   }
 }
 
 /* Laptop view adjustments */
 @media (min-width: 1024px) {
   .skill {
-    max-width: 500px; /* Limit skill width on larger screens */
+    max-width: 960px; /* Limit skill width on larger screens */
+    margin-right: 40px;
+    margin-right: 40px;
+  }
+
+  .skillName {
+    width: 960px;
+    text-align: start;
+
   }
 
   .progressBar {
@@ -68,19 +79,20 @@
   }
 }
 
+
 @media (min-width: 1440px) {
   .skill {
-    max-width: 800px; /* Further increase width for large screens */
+    max-width: 1300px; /* Further increase width for large screens */
   }
 
   .skillName {
-    width: 1200px;
+    width: 1300px;
     text-align: start;
 
   }
 
   .progressBar {
-    width: 80%; /* Further adjust progress bar width for large screens */
+    width: 100%; /* Further adjust progress bar width for large screens */
   }
 }
 
@@ -88,11 +100,16 @@
 
 @media (width <= 450px) {
   
-  
+  .skill {
+    max-width: 450px; 
+        padding-left: 10px;
+  }
   .skillName {
     font-size: 15px;
     text-align: start;
-    padding: 0px 60px;
+
+    /* padding: 0px 60px; */
+
 
   }
 

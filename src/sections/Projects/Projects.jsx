@@ -82,8 +82,8 @@ function Projects() {
 
     {
       images: [busdashboard3],
-      link: 'https://itd-layout2-test.transportation-dashboard.com/',
-      // link: 'https://layout2.transportation-dashboard.com/',
+      // link: 'https://itd-layout2-test.transportation-dashboard.com/',
+      link: 'https://layout2.transportation-dashboard.com/',
       name: 'ICONSIAM Transportation Dashboard Project',
       description: 'Maintain of ICONSIAM Transportation Dashboard with .NETCORE MVC, Javascript and API of Thai Smile Bus, Thai Smile Boat, Supatra Boat, BTS, Parking available and Queing',
     },
