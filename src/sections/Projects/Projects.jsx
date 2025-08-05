@@ -1,6 +1,7 @@
 import styles from './ProjectsStyles.module.css';
 import carParkingVideo from '../../assets/carparkingiconsiam.mp4'; 
 import NikecloneVideo from '../../assets/nikevd1.mp4'; 
+import NikecloneVideo2 from '../../assets/NikeAug2025.mp4'; 
 import gtb from '../../assets/gtb.jpg';
 import mptclub from '../../assets/mptclub.jpg';
 import mptipcc from '../../assets/mptipcc.jpg';
@@ -40,22 +41,30 @@ import { useEffect, useState } from 'react';
 function Projects() {
 
   const [currentCarouselIndex, setCurrentCarouselIndex] = useState(0);
+  const [fade, setFade] = useState(false);
 
   useEffect(() => {
   const interval = setInterval(() => {
     setCurrentCarouselIndex(prev => (prev + 1) % (projects[0].carousel?.length || 1));
-  }, 3000); // 1s
+  }, 4000); // 1s
 
     return () => clearInterval(interval);
   }, []);
 
   const projects = [
 
+    // {
+    //   carousel: [ img2, img3, img4, img5, img6, img1, img7, img8, img9, img10, img11, img12, img13],
+    //   name: 'React and Laravel API Fullstack Ecommerce',
+    //   description: 'Developed with frontend React, tailwindcss and backend php Laravel API',
+    //   link: 'https://react-and-laravel-api-ecommerce.vercel.app/',
+    // },
+
     {
-      carousel: [ img2, img3, img4, img5, img6, img1, img7, img8, img9, img10, img11, img12, img13],
-      name: 'React and Laravel API Fullstack Ecommerce',
-      description: 'Developed with frontend React, tailwindcss and backend php Laravel API',
+      videos: [NikecloneVideo2],
       link: 'https://react-and-laravel-api-ecommerce.vercel.app/',
+      name: 'React and Laravel API Fullstack Ecommerce (Nike Clone)',
+      description: 'Developed with frontend React, tailwindcss and backend php Laravel API',
     },
     
     
@@ -116,7 +125,8 @@ function Projects() {
     },
     {
       images: [laravelecommerce],
-      link: 'https://www.cherrypeachtechnology.com/',
+      // link: 'https://www.cherrypeachtechnology.com/',
+      link: 'https://github.com/zinmyoswe/Laravel-Ecommerce',
       name: 'laravel Ecommerce',
       description: 'Developed backend with php, laravel and frontend with vue',
     },
@@ -173,11 +183,13 @@ function Projects() {
             <div className={styles.imageContainer}>
 
               {project.carousel && (
-                <img
-                  src={project.carousel[currentCarouselIndex]}
-                  alt={project.name}
-                  className={styles.carouselImage}
-                />
+                <div className={styles.carouselWrapper}>
+                  <img
+                    src={project.carousel[currentCarouselIndex]}
+                    alt={project.name}
+                    className={styles.carouselImage}
+                  />
+                </div>
               )}
              
               {project.videos && project.videos.map((videoSrc, vidIndex) => (
