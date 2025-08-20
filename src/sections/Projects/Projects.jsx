@@ -111,12 +111,12 @@ function Projects() {
       name: 'Gemini API',
       description: 'Developed with react and Gemini API',
     },
-    // {
-    //   images: [traveldashboard],
-    //   link: 'https://travel-dashboard2.vercel.app/',
-    //   name: 'React Travel Dashboard',
-    //   description: 'Developed with react ,react router v7, Google Auth, appwrite and stripe',
-    // },
+    {
+      images: [traveldashboard],
+      link: 'https://travel-dashboard2.vercel.app/',
+      name: 'AI Saas Travel Agent',
+      description: 'Developed with react typescript,react router v7, GeminiAPI, Google Auth, appwrite and stripe',
+    },
     {
       images: [nflix],
       link: 'https://movieapi.peachcherrytechnology.com/',
