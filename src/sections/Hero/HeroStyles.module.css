@@ -111,6 +111,9 @@
       width: 250px;
     } */
 
+    align-items: center;
+    justify-content: space-evenly;
+
     .info h2{
       font-size: 18px;
       padding-left: 15px;

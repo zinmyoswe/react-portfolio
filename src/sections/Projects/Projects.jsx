@@ -215,7 +215,7 @@ function Projects() {
               <h3>{project.name}</h3>
               <p>{project.description}</p>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <button className="hover">View Project</button>
+                <button className="hover bg-[linear-gradient(264deg,#DF8908_-5.09%,#B415FF_106.28%)] text-white">View Project</button>
               </a>
             </div>
           </div>
