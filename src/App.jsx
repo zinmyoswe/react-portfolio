@@ -6,6 +6,7 @@ import Projects from './sections/Projects/Projects';
 import Skills from './sections/Skills/Skills';
 import WorkExperience from './sections/WorkExperience/WorkExperience';
 import './index.css';
+import Education from './sections/Education/Education';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Projects />
       <Skills />
       <WorkExperience />
+      <Education />
       {/* <Contact /> */}
       <Footer />
     </>

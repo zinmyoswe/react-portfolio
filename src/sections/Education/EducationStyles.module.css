@@ -1,0 +1,120 @@
+/* Section Header */
+.sectionContainer {
+    padding: 60px 20px;
+    background-color: var(--section-background-color); /* Use a light secondary background */
+    color: var(--text-color);
+    text-align: center;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--heading-color); /* Main theme color for headings */
+}
+
+/* List Container (Vertical stack on mobile) */
+.educationList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Individual Education Card (The core LinkedIn style) */
+.educationCard {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid var(--border-color); /* Light border for definition */
+    border-radius: 12px;
+    background-color: var(--card-background-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    transition: transform 200ms ease, box-shadow 200ms ease;
+    text-align: left;
+}
+
+.educationCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logoContainer {
+    flex-shrink: 0; /* Prevents the logo from shrinking */
+    width: 60px;
+    height: 60px;
+    border-radius: 8px; /* Slightly rounded corners for the logo container */
+    overflow: hidden;
+    border: 1px solid #ddd; /* Light border around the logo */
+}
+
+.schoolLogo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the entire logo is visible */
+}
+
+/* Text Details */
+.details {
+    flex-grow: 1;
+}
+
+.schoolName {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: var(--primary-text-color);
+}
+
+.degree {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+    margin-bottom: 8px;
+}
+
+.dates, .grade {
+    font-size: 0.95rem;
+    color: var(--muted-text-color); /* Use a lighter color for meta-data */
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 1.1rem;
+    margin-right: 8px;
+    color: var(--highlight-color); /* Use a highlight color for icons */
+}
+
+
+/* --- Responsiveness (Mobile adjustments) --- */
+@media (max-width: 600px) {
+    .sectionContainer {
+        padding: 40px 15px;
+    }
+    
+    .educationCard {
+        /* Stack logo and details vertically on very small screens if necessary, 
+           but horizontal works well for this design, so we'll just tighten the space */
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logoContainer {
+        width: 50px;
+        height: 50px;
+    }
+
+    .schoolName {
+        font-size: 1.1rem;
+    }
+    
+    .degree {
+        font-size: 0.9rem;
+    }
+}

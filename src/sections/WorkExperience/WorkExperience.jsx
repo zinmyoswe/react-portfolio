@@ -22,8 +22,7 @@ function WorkExperience() {
     {
       role: 'SOC (VMAX) Big Data Engineer',
       company: 'ZTE CORPORATION, Myanmar',
-      logo: 'https://media.licdn.com/dms/image/v2/D560BAQE5DQtVDqfd4w/company-logo_200_200/company-logo_200_200/0/1735625704161/zte_logo?e=1760572800&v=beta&t=Yvmp_L-YBs7iHrglrxQ5qhWWojy1PKKo1aaT3eB_oZQ',
-      date: 'Sep 2022 - Aug 2023',
+      logo: 'https://images.seeklogo.com/logo-png/28/1/zte-logo-png_seeklogo-284862.png',
       details: [
       'Collaborated with R&D to resolve issues, monitored logs, alarms, and trace systems to help R&D teams quickly detect problems.',
       'Maintained KQI and KPI metrics, troubleshot, and managed server operations. Analyzed Big Data and used Linux, Spark, and SQL for server, data, and storage management.',
@@ -34,7 +33,7 @@ function WorkExperience() {
     {
       role: 'SOC Analysis Support Engineer',
       company: 'ZTE CORPORATION, Myanmar',
-      logo: 'https://media.licdn.com/dms/image/v2/D560BAQE5DQtVDqfd4w/company-logo_200_200/company-logo_200_200/0/1735625704161/zte_logo?e=1760572800&v=beta&t=Yvmp_L-YBs7iHrglrxQ5qhWWojy1PKKo1aaT3eB_oZQ',
+      logo: 'https://images.seeklogo.com/logo-png/28/1/zte-logo-png_seeklogo-284862.png',
       date: 'Sep 2022 - Aug 2023',
       details: [
       'Analyze and improve network performance. Conduct root cause analysis for issues.',

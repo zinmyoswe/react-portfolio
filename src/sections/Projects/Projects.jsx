@@ -14,20 +14,8 @@ import oml2 from '../../assets/oml2.jpg';
 import oml3 from '../../assets/oml3.jpg';
 import busdashboard3 from '../../assets/busdashboard3.jpg';
 import nflix from '../../assets/nflix.jpg';
-import img1 from '../../assets/landingpage.png';
-import img2 from '../../assets/FavouriteModal.png';
-import img3 from '../../assets/favourite.png';
-import img4 from '../../assets/productdetail.png';
-import img5 from '../../assets/productdetailmodal.png';
-import img6 from '../../assets/men.png';
-import img7 from '../../assets/women2.png';
-import img8 from '../../assets/slider.png';
-import img9 from '../../assets/shoe3.png';
-import img10 from '../../assets/shippingpage.png';
-import img11 from '../../assets/cartpage2.png';
-import img12 from '../../assets/payment.png';
-import img13 from '../../assets/search2.png';
 import traveldashboard from '../../assets/traveldashboard.png';
+
 
 
 
@@ -53,12 +41,7 @@ function Projects() {
 
   const projects = [
 
-    // {
-    //   carousel: [ img2, img3, img4, img5, img6, img1, img7, img8, img9, img10, img11, img12, img13],
-    //   name: 'React and Laravel API Fullstack Ecommerce',
-    //   description: 'Developed with frontend React, tailwindcss and backend php Laravel API',
-    //   link: 'https://react-and-laravel-api-ecommerce.vercel.app/',
-    // },
+    
 
     {
       videos: [NikecloneVideo2],
@@ -97,6 +80,8 @@ function Projects() {
       name: 'ICONSIAM Transportation Dashboard Project',
       description: 'Maintain of ICONSIAM Transportation Dashboard with .NETCORE MVC, Javascript and API of Thai Smile Bus, Thai Smile Boat, Supatra Boat, BTS, Parking available and Queing',
     },
+
+  
     
     
     {
