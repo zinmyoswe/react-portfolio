@@ -1,8 +1,6 @@
 import styles from './HeroStyles.module.css';
 // import heroImg from '../../assets/Design uten navn.png';
 import heroImg from '../../assets/zinmyo.jpg';
-import sun from '../../assets/sun.svg';
-import moon from '../../assets/moon.svg';
 import twitterLight from '../../assets/twitter-light.svg';
 import twitterDark from '../../assets/twitter-dark.svg';
 import githubLight from '../../assets/github-light.svg';
@@ -13,9 +11,8 @@ import CV from '../../assets/Zin Myo Swe EN Resume.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
-  const themeIcon = theme === 'light' ? sun : moon;
   const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
@@ -28,15 +25,9 @@ function Hero() {
           className={styles.hero}
           alt="Profile picture of Harris Johnsen"
         />
-        <img
-          className={styles.colorMode}
-          src={themeIcon}
-          alt="Color mode icon"
-          onClick={toggleTheme}
-        />
       </div>
       <div className={styles.info}>
-        <h1>
+        <h1 className='text-5xl'>
           ZIN MYO SWE
           <br />
           
@@ -60,10 +51,6 @@ function Hero() {
           <a href={CV} download>
             <button className="hover">Resume</button>
           </a>
-
-          {/* <a href={CV} download>
-            <button className="hover2">Resume2</button>
-          </a> */}
         </div>
       </div>
     </section>

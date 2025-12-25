@@ -7,18 +7,18 @@ import Skills from './sections/Skills/Skills';
 import WorkExperience from './sections/WorkExperience/WorkExperience';
 import './index.css';
 import Education from './sections/Education/Education';
+import { ThemeProvider } from './common/ThemeContext';
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <Hero />
       <Projects />
       <Skills />
       <WorkExperience />
       <Education />
-      {/* <Contact /> */}
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 

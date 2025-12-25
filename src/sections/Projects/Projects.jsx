@@ -15,6 +15,8 @@ import oml3 from '../../assets/oml3.jpg';
 import busdashboard3 from '../../assets/busdashboard3.jpg';
 import nflix from '../../assets/nflix.jpg';
 import traveldashboard from '../../assets/traveldashboard.png';
+import agodaclone from '../../assets/agodaclone.png';
+import pcineplex2026 from '../../assets/pcineplex2026.png';
 
 
 
@@ -42,7 +44,18 @@ function Projects() {
   const projects = [
 
     
-
+    {
+      images: [agodaclone],
+      link: 'https://mern-hotel-booking-trip.vercel.app/',
+      name: 'Nodejs and React Hotel Booking Project(Agoda Clone)',
+      description: 'Developed with backend Nodejs, express, mongodb and frontend React',
+    },
+    {
+      images: [pcineplex2026],
+      link: 'https://pcineplex-movie-ticket-booking.vercel.app/',
+      name: 'Nodejs and React Cinema Ticket Booking Project',
+      description: 'Developed with backend Nodejs, express, mongodb, inngest and frontend React',
+    },
     {
       videos: [NikecloneVideo2],
       link: 'https://react-and-laravel-api-ecommerce.vercel.app/',
@@ -161,7 +174,7 @@ function Projects() {
 
   return (
     <section id="projects" className={styles.container}>
-      <h1 className="sectionTitle">Projects</h1>
+      <h1 className="sectionTitle text-3xl">Projects</h1>
       <div className={styles.projectsContainer}>
         {projects.map((project, index) => (
           <div key={index} className={styles.project}>

@@ -3,21 +3,21 @@ import styles from './EducationStyles.module.css';
 
 const educationData = [
   {
-    logo: 'https://media.licdn.com/dms/image/v2/D4E0BAQGt65Tb04c61g/company-logo_100_100/B4EZf4szZLGcAQ-/0/1752224184383?e=1766016000&v=beta&t=5mq0nVJJb_zf711XnDkLBgmGAI5moBkjxaBWn9dv3IE',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbq8eO13w7QARDUcxZ0k3qS2IoNuCIz27lhg&s',
     school: 'University of Greenwich',
     degree: 'Bachelor of Science - BS, Business Information Technology',
     dates: '2017 - 2018',
     grade: 'Second Class Honours (1st DIVISION)',
   },
   {
-    logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQHD-RVDyFR0IA/company-logo_100_100/company-logo_100_100/0/1663745547653/ncc_education_logo?e=1766016000&v=beta&t=8yqTdeWNcHtRHYQfYje5AUNl4_GBhIy1BMJ3bRgOnPA',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvkU5-FvDAHP-qKmFltiTlZAHmN6U_xExMpQ&s',
     school: 'NCC Education',
     degree: 'Level 5 Diploma, Computing (QCF)',
     dates: '2015 - 2016',
     grade: null, 
   },
   {
-    logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQHD-RVDyFR0IA/company-logo_100_100/company-logo_100_100/0/1663745547653/ncc_education_logo?e=1766016000&v=beta&t=8yqTdeWNcHtRHYQfYje5AUNl4_GBhIy1BMJ3bRgOnPA',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvkU5-FvDAHP-qKmFltiTlZAHmN6U_xExMpQ&s',
     school: 'NCC Education',
     degree: 'Level 4 Diploma, Computing (QCF)',
     dates: '2014 - 2015',
